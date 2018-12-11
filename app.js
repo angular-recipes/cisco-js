@@ -41,36 +41,50 @@ for (city of cities) {
 
 cities = ['New Delhi', 'Banglore', 'Mumbai', 'Chennai', 'Madurai'];
 
-var city = cities.find(function(e) { 
+var city = cities.find(function (e) {
     return e.charAt(0) == 'M'
 });
 console.log(city);
 
-var cityStartingWithM = cities.filter(function(e) {
+var cityStartingWithM = cities.filter(function (e) {
     return e.charAt(0) == 'M'
 });
 
 console.log(cityStartingWithM);
 
-var numbers = [23,43,11,87,90];
-var sum = numbers.reduce(function(sum,n) {
+var numbers = [23, 43, 11, 87, 90];
+var sum = numbers.reduce(function (sum, n) {
     return sum + n;
 }, 0);
 console.log(sum);
 
-var result = cities.reduce(function(res, e) {
-    if(e.charAt(0) == 'M') {
+var result = cities.reduce(function (res, e) {
+    if (e.charAt(0) == 'M') {
         return res + ', ' + e;
     } else {
         return res;
-    }   
+    }
 }, '');
 console.log(result);
 
-var newArray = numbers.map(function(e) {
-    return e*2;
+var newArray = numbers.map(function (e) {
+    return e * 2;
 });
 console.log(newArray);
+
+var numbers = [2, 88, -9, 34, 1, -23];
+
+var largest = numbers.reduce((res, e) => e > res ? e : res, numbers[0]);
+console.log(largest);
+
+var allNegatives = numbers.filter(e => e < 0);
+console.log(allNegatives);
+
+var allPositives = numbers
+    .filter(e => e > 0)
+    .reduce((sum, e) => sum + e, 0);
+
+console.log(sumOfAllPositives);
 
 //Functions
 console.log('--------------FUNCTIONS------------');
