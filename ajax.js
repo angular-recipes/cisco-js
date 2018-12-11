@@ -8,8 +8,6 @@ function displayTodos() {
             todo.label +
             ' ' +
             (todo.done ? '&#x2713;' : '&#x2717;') +
-            '<button onclick="deleteTodo(' + index + ')">delete</button>' +
-            '<button onclick="toggleStatus(' + index + ')">toggle</button>' +
             '</div>';
     });
 }
