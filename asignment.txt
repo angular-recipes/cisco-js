@@ -1,0 +1,15 @@
+Assignment
+—————-
+Create a Book shopping cart app.
+
+The Alchemist | 23 | 2
+5 point someone | 34 | 1
+Total Price : 80
+—————————————————
+The Alchemist
+23
+[add to cart]
+
+5 point someone
+34
+[add to cart]
