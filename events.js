@@ -20,6 +20,14 @@ function displayTodos() {
     });
 }
 
+function checkKey(key) {
+    console.log(key);
+    if(key == 'Enter') {
+        addTodo();
+        displayTodos();
+    }
+}
+
 function addTodo() {
     var inputEl = document.getElementById('input');
     todos.push({label: inputEl.value, done: false });
